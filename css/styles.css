@@ -164,7 +164,6 @@ body{
 
     background: var(--blue-color);
     color: var(--white-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
@@ -607,7 +606,6 @@ footer {
 
   background: var(--blue-color);
   color: var(--white-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   justify-content: center;
 }

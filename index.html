@@ -262,17 +262,17 @@
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button data-modal-close class="exit_modal">x</button>
-      <div class="modal-container">
+      <button data-modal-close class="exit_modal"><svg width="11" height="11"><use xlink:href="./images/icons.svg#icon-x-modal"></use></svg></button>
+      <div>
         <h3>Deje sus datos, nos contactaremos con usted</h3>
-        <form name="solicitud" autocomplete="on">
+        <form class="modal-container" name="solicitud" autocomplete="on">
           <label>
             nombre
-            <input type="text" name="nombre de usuario"/>
+            <input type="text" name="nombre de usuario" autofocus/>
           </label>
           <label>
             telefono
-            <input type="text" name="nombre de usuario"/>
+            <input type="tel" name="phone"/>
           </label>
           <label>
             e-mail
@@ -281,6 +281,10 @@
           <label>
             comentarios
             <input type="text" name="nombre de usuario"/>
+          </label>
+          <label for="aceptar">
+            <input type="checkbox"/>
+            <p>Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
           </label>
           <button class="butoms-modal" type="submit">Enviar</button>
         </form>

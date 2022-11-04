@@ -264,15 +264,30 @@
     <div class="modal">
       <button data-modal-close class="exit_modal">x</button>
       <div class="modal-container">
-      <h3>Deje sus datos, nos contactaremos con usted</h3>
-      <span>Nombre</span>
-      <span>telefono</span>
-      <span>e-mail</span>
-      <span>comentarios</span>
+        <h3>Deje sus datos, nos contactaremos con usted</h3>
+        <form name="solicitud" autocomplete="on">
+          <label>
+            nombre
+            <input type="text" name="nombre de usuario"/>
+          </label>
+          <label>
+            telefono
+            <input type="text" name="nombre de usuario"/>
+          </label>
+          <label>
+            e-mail
+            <input type="text" name="nombre de usuario"/>
+          </label>
+          <label>
+            comentarios
+            <input type="text" name="nombre de usuario"/>
+          </label>
+          <button class="butoms-modal" type="submit">Enviar</button>
+        </form>
     </div>
     </div>
   </div>
-  <script src="/js/modal.js"></script>
+  <script src='./js/modal.js'></script>
 
   </body>
 </html>

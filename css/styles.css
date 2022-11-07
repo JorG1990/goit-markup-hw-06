@@ -317,6 +317,7 @@ color: var(--green-color);
   cursor: pointer;
   border: var(--white-color);
   background: #F5F4FA;
+  margin-right: 8px;
   color: var(--black-color);
 }
 
@@ -527,13 +528,22 @@ footer {
 .input_footer {
   width: 358px;
   height: 50px;
+  margin-right: 10px;
   border-radius: 4px;
   background-color: var(--main-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.suscribcion {
+  display: flex;
+}
+
+.telegram {
+  margin: 10px 20px;
+  }
+
 .container-link{
-  margin-left: 72px;
+  margin-left: 65px;
 }
 
 .information {
@@ -653,6 +663,7 @@ form {
 }
 
 .butoms-modal {
+  display: flex;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -668,6 +679,7 @@ form {
   justify-content: center;
   border: var(--blue-color);
 }
+
 
 .exit_modal{
   position: absolute;

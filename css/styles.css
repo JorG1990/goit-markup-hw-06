@@ -177,6 +177,7 @@ padding: 0 0 26px 0;
   color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-img{
@@ -319,13 +320,14 @@ color: var(--green-color);
   background: #F5F4FA;
   margin-right: 8px;
   color: var(--black-color);
+
 }
 
 .button:hover{
   color: var(--white-color);
   background-color: var(--blue-color);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p {
@@ -393,8 +395,8 @@ h4 {
   width: 370px;
   height: 420px;
   margin-bottom: 30px;
-background:#FFFFFF;
-border-radius: 0px 0px 4px 4px;
+  background:#FFFFFF;
+  border-radius: 0px 0px 4px 4px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
@@ -683,6 +685,7 @@ form {
   align-items: center;
   justify-content: center;
   border: var(--blue-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .exit_modal{

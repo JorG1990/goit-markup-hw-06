@@ -553,6 +553,7 @@ footer {
 
 .suscribcion {
   display: flex;
+  flex-direction: row;
 }
 
 .telegram {

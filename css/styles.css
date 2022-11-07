@@ -664,13 +664,13 @@ form {
   flex-direction: column;
 }
 
-.container_butoms {
+.container_buttoms {
   width: auto;
   display: flex;
   justify-content: center;
 }
 
-.butoms-modal {
+.buttoms-modal {
   display: flex;
   font-weight: 700;
   font-size: 16px;

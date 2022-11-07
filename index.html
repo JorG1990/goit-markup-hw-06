@@ -16,7 +16,7 @@
         <a class="Logo" href="#">WebStudio</a>
         <div class="container_link">
           <ul>
-            <li class="header_item"><a class="link" href="./index.html">Estudio</a></li>
+            <li class="header_item"><a class="link active" href="./index.html">Estudio</a></li>
             <li class="header_item"><a class="link" href="./portfolio.html">Portafolio</a></li>
             <li class="header_item"><a class="link" href="#">Contactos</a></li>
           </ul>
@@ -257,36 +257,52 @@
       <svg class="redes-footer" width="44" height="44"><use xlink:href="./images/icons.svg#icon-elipse-LinkedIn
         "></use></svg>
     </div>
+    <div class="container-link">
+      <h3 class="h3-box">SUSCRÍBASE al boletín informativo </h3>
+      <input class="input_footer" tipe="text"/>
+      <button class="butoms-modal">suscribase <svg width="24" height="24"><use xlink:href="./images/icons.svg#icon-enviar-telegram
+        "></use></svg></button>
+    </div>
   </div>
+
   </footer>
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button data-modal-close class="exit_modal"><svg width="11" height="11"><use xlink:href="./images/icons.svg#icon-x-modal"></use></svg></button>
       <div>
-        <h3>Deje sus datos, nos contactaremos con usted</h3>
+        <h3 class="aaa">Deje sus datos, nos contactaremos con usted</h3>
         <form class="modal-container" name="solicitud" autocomplete="on">
-          <label>
-            nombre
+          <label>nombre</label>
+          <div class="icon_form">
+          <svg class="icon_svg" width="12" height="12"><use xlink:href="./images/icons.svg#icon-modal_usuario
+            "></use></svg>
             <input type="text" name="nombre de usuario" autofocus/>
+          </div>
+          <label>telefono</label>
+            <div class="icon_form">
+              <svg class="icon_svg" width="12" height="12"><use xlink:href="./images/icons.svg#icon-modal_phone
+                "></use></svg>
+                <input type="tel" name="telefono de usuario" autofocus/>
+              </div>
+          <label>e-mail</label>
+          <div class="icon_form">
+            <svg class="icon_svg" width="12" height="12"><use xlink:href="./images/icons.svg#icon-modal_e-mail
+              "></use></svg>
+              <input type="text" name="email del usuario" autofocus/>
+            </div>
+          <label>comentarios</label>
+            <input class="input_comentarios" type="text" name="nombre de usuario"/>
+            <div class="container_check">
+            <input class="check" type="checkbox"/>
+            <label for="aceptar">
+             de acuerdo con el boletín informativo y acepto los Términos y Condiciones
           </label>
-          <label>
-            telefono
-            <input type="tel" name="phone"/>
-          </label>
-          <label>
-            e-mail
-            <input type="text" name="nombre de usuario"/>
-          </label>
-          <label>
-            comentarios
-            <input type="text" name="nombre de usuario"/>
-          </label>
-          <label for="aceptar">
-            <input type="checkbox"/>
-            <p>Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
-          </label>
+        </div>
+        <div class="container_butoms">
           <button class="butoms-modal" type="submit">Enviar</button>
+       </div>
+
         </form>
     </div>
     </div>

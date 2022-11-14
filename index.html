@@ -260,54 +260,59 @@
     <div class="container-link">
       <h3 class="h3-box">SUSCRÍBASE al boletín informativo </h3>
       <form class="suscribcion">
-      <input class="input_footer" placeholder="Correo electrónico">
-      <button class="buttoms-modal" type="submit">Suscríbase <svg class="telegram" width="24" height="24"><use xlink:href="./images/icons.svg#icon-enviar-telegram
+      <input class="input_footer" placeholder="Correo electrónico" required>
+      <button class="buttoms-footer" type="submit">Suscríbase <svg class="telegram" width="24" height="24"><use xlink:href="./images/icons.svg#icon-enviar-telegram
         "></use></svg></button>
       </form>
     </div>
   </div>
-
   </footer>
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button data-modal-close class="exit_modal"><svg width="11" height="11"><use xlink:href="./images/icons.svg#icon-x-modal"></use></svg></button>
-      <div>
-        <h3 class="datos">Deje sus datos, nos contactaremos con usted</h3>
-        <form class="modal-container" name="solicitud" autocomplete="on">
-          <label>nombre</label>
-          <div class="icon_form">
-          <svg class="icon_svg" width="12" height="12"><use xlink:href="./images/icons.svg#icon-modal_usuario
-            "></use></svg>
-            <input class="input" type="text" name="nombre de usuario" autofocus>
-          </div>
-          <label>telefono</label>
-            <div class="icon_form">
-              <svg class="icon_svg" width="12" height="12"><use xlink:href="./images/icons.svg#icon-modal_phone
-                "></use></svg>
-                <input class="input" type="tel" name="telefono de usuario">
-              </div>
-          <label>e-mail</label>
-          <div class="icon_form">
-            <svg class="icon_svg" width="12" height="12"><use xlink:href="./images/icons.svg#icon-modal_e-mail
-              "></use></svg>
-              <input class="input" type="text" name="email del usuario">
-            </div>
-          <label>comentarios</label>
-            <input class="input_comentarios" type="text" name="nombre de usuario" placeholder="Introduzca el texto">
-            <div class="container_check">
-            <input class="check" type="checkbox">
-            <label>
-             de acuerdo con el boletín informativo y acepto los Términos y Condiciones
-          </label>
-        </div>
-        <div class="container_buttoms">
-          <button class="buttoms-modal" type="submit">Enviar</button>
-       </div>
-
-        </form>
-    </div>
-    </div>
+      <button data-modal-close class="exit_modal">
+        <svg class="modal-exit" width="11" height="11"><use xlink:href="./images/icons.svg#icon-x-modal"></use></svg></button>
+    <div class="container-modal">
+    <h3 class="datos">Deje sus datos, nos contactaremos con usted</h3>
+    <form>
+      <label  class="label-name" for="input-name">
+        Nombre
+      </label>
+      <div class="position">
+        <input class="input" type="text" name="nombre" id="input-name" required>
+        <svg class="icon_svg" width="12" height="12"><use xlink:href="./images/icons.svg#icon-modal_usuario"></use></svg>
+      </div>
+      <label  class="label-name" for="input-phone">
+        Teléfono
+      </label>
+      <div class="position">
+        <input class="input" type="tel" name="phone" id="input-phone" required>
+        <svg class="icon_svg" width="12" height="12"><use xlink:href="./images/icons.svg#icon-modal_phone"></use></svg>
+      </div>
+      <label  class="label-name" for="input-E-mail">
+        E-mail
+      </label>
+      <div class="position">
+        <input class="input" type="email" name="email" id="input-E-mail" required>
+        <svg class="icon_svg" width="12" height="12"><use xlink:href="./images/icons.svg#icon-modal_e-mail"></use></svg>
+      </div>
+      <label class="label-name" for="input-E-mail">
+        Comentarios
+      </label>
+      <textarea class="input_comentarios" name="comentarios" id="input-comentarios" placeholder="Introduzca el texto"></textarea>
+      <label class="lin-checkbox">
+        <input type="checkbox" id="accept-terms" name="accept-terms" required hidden>
+        <samp class="icon_check">
+          <svg width="28" height="30"><use xlink:href="./images/icons.svg#icon-checkbox"></use></svg>
+        </samp>
+        Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+      </label>
+      <div class="container_buttoms">
+        <button class="buttoms-modal" type="submit">Enviar</button>
+     </div>
+    </form>
+  </div>
+</div>
   </div>
   <script src='./js/modal.js'></script>
 

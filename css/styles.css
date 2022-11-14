@@ -708,14 +708,15 @@ main section:nth-child(2) {
   transition: var(--portrait-transition);
 }
 
+.exit_modal:hover .modal-exit{
+  fill: #2196F3;
+}
+
 .modal-exit{
   pointer-events: none;
   fill: #000000;
 }
 
-.modal-exit:hover{
-  fill: #2196F3;
-}
 
 .datos {
   font-family: 'Roboto';

@@ -142,7 +142,7 @@ body{
   color: var(--blue-color);
   border-bottom: 4px solid var(--blue-color);
   padding: 0 0 26px 0;
-  }
+}
 
 .header_item{
    font-size: 14px;
